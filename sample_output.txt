@@ -1,0 +1,41 @@
+=== OFFLINE FILE-SHARING RISK SIMULATOR ===
+1. Create risk scenario
+2. View saved scenarios
+3. Compare a safer alternative
+4. Exit
+Choose: 1
+Scenario name: Project Source Archive
+File type (document/image/code/archive): code
+Sensitivity (1-5): 5
+Recipient trust (1=unknown, 5=trusted): 2
+Channel safety (1=public link, 5=managed private channel): 2
+Is the file encrypted before sharing? (y/n): n
+Does the access link expire? (y/n): n
+Is recipient authentication required? (y/n): n
+Is access/activity logging available? (y/n): n
+Can the sender revoke access? (y/n): n
+
+--- RISK ASSESSMENT ---
+Scenario: Project Source Archive
+Score: 100/100
+Level: CRITICAL
+Why:
+ - Sensitive content: +25 — The file contains highly sensitive information.
+ - Low recipient trust: +20 — The recipient is not strongly trusted.
+ - Weak sharing channel: +20 — The chosen channel provides limited control.
+ - No encryption: +15 — The file is shared without an additional encryption layer.
+ - No expiry: +8 — Access may remain valid longer than necessary.
+ - No recipient authentication: +10 — Possession of the link may be enough for access.
+ - No access logging: +7 — Access cannot be easily reviewed.
+ - Access not revocable: +5 — The sender cannot quickly withdraw access.
+ - Source-code exposure: +10 — Unprotected source code can reveal intellectual property.
+Recommendations:
+ - Classify the file and apply stronger protection before sharing.
+ - Verify the recipient identity before granting access.
+ - Use a managed private channel instead of a public link.
+ - Encrypt sensitive files before sharing.
+ - Set an access-expiration time.
+ - Require recipient authentication.
+ - Enable access/activity logging.
+ - Choose a mechanism that supports revocation.
+ - Encrypt code archives and share only with verified recipients.
